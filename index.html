@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Weather Insights</h1>
+        <p>Your daily guide to weather conditions</p>
+    </header>
+    <main class="container">
+        <section class="search-section">
+            <input type="text" id="city-input" placeholder="Enter city name..." />
+            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            <button id="location-btn"><i class="fas fa-map-marker-alt"></i> Use My Location</button>
+        </section>
+        <section class="weather-info">
+            <div class="current-weather">
+                <h2 id="city-name">City: Kolkata</h2>
+                <p id="temperature">Temperature: 25°C</p>
+                <p id="description">Weather: Clear Sky</p>
+                <p id="humidity">Humidity: 45%</p>
+                <img id="weather-icon" src="cloud.jpeg" alt="Weather Icon" />
+            </div>
+        </section>
+        <section class="forecast">
+            <h2>3-Day Forecast for Kolkata </h2>
+            <div class="forecast-cards">
+                <div class="forecast-card">
+                    <h3>Tomorrow</h3>
+                    <p>Temp: 28°C</p>
+                    <p>Weather: Sunny</p>
+                </div>
+                <div class="forecast-card">
+                    <h3>Day After Tomorrow</h3>
+                    <p>Temp: 30°C</p>
+                    <p>Weather: Partly Cloudy</p>
+                </div>
+                <div class="forecast-card">
+                    <h3>3 Days Later</h3>
+                    <p>Temp: 27°C</p>
+                    <p>Weather: Light Rain</p>
+                </div>
+            </div>
+        </section>
+        <div id="loading-spinner" class="hidden">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading...</p>
+        </div>
+    </main>
+    <footer>
+        <p>Weather Insights © 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
